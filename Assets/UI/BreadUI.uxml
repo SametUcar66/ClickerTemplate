@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/BreadUI.uss" />
+    <ui:VisualElement name="root" class="root-container">
+        <!-- Top Area: Stats and Clicker -->
+        <ui:VisualElement name="top-area" class="top-area">
+            <ui:VisualElement name="stats-container" class="stats-container">
+                <ui:Label name="bread-count" text="0 Bread" class="bread-count-label" />
+                <ui:Label name="bread-per-second" text="0 per second" class="bps-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="clicker-container" class="clicker-container">
+                <ui:Button name="bread-button" class="bread-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Bottom Area: Shop -->
+        <ui:VisualElement name="shop-area" class="shop-area">
+            <ui:Label text="Bread Shop" class="shop-title" />
+            <ui:ScrollView name="upgrade-list" class="upgrade-list" />
+        </ui:VisualElement>
+
+        <!-- Banner Ad Container -->
+        <ui:VisualElement name="ad-container" class="ad-container">
+            <ui:Label text="Banner Ad Area" class="ad-placeholder-text" />
+        </ui:VisualElement>
+
+        <!-- Popup -->
+<ui:VisualElement name="offline-popup" class="popup-overlay" style="display: none;">
+            <ui:VisualElement class="popup-content">
+                <ui:Label text="Welcome Back!" class="popup-title" />
+                <ui:Label name="offline-amount-text" text="You earned 0 bread while away." class="popup-body" />
+                <ui:Button name="close-popup-button" text="Awesome!" class="popup-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

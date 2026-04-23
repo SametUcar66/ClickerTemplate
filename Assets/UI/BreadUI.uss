@@ -1,0 +1,238 @@
+:root {
+    --color-bg: #f5f5dc;
+    --color-panel: rgba(210, 180, 140, 0.9);
+    --color-text: #3e2723;
+    --color-button: #8d6e63;
+    --color-button-hover: #a1887f;
+    --color-outline: #2d1b18;
+    --color-highlight: #ffd54f;
+}
+
+.root-container {
+    flex-grow: 1;
+    flex-direction: column; /* Vertical layout for mobile */
+    background-image: url("project://database/Assets/Sprites/background.png");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.top-area {
+    flex-grow: 1; /* Takes up remaining space (55%) */
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.shop-area {
+    flex-basis: 45%; /* Exactly 45% height */
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+    padding: 20px;
+    border-top-width: 6px;
+    border-top-color: var(--color-text);
+    border-left-width: 0;
+}
+
+/* Stats Styling - Top Left */
+.stats-container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    align-items: flex-start;
+}
+
+.bread-count-label {
+    font-size: 80px; /* Even larger for mobile impact */
+    -unity-font-style: bold;
+    color: #ffffff;
+    -unity-text-outline-width: 2px;
+    -unity-text-outline-color: var(--color-outline);
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.bps-label {
+    font-size: 40px; /* Larger BPS text */
+    color: var(--color-highlight);
+    -unity-font-style: bold;
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: var(--color-outline);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    margin-top: -5px;
+}
+
+/* Clicker Styling */
+.clicker-container {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Offset for stats */
+}
+
+.bread-button {
+    width: 450px; /* Larger for mobile */
+    height: 450px;
+    background-image: url("project://database/Assets/Sprites/ekmek.png");
+    background-color: rgba(0,0,0,0);
+    border-width: 0;
+    transition-duration: 0.1s;
+    transition-property: scale;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.bread-button:hover {
+    scale: 1.08;
+}
+
+.bread-button:active {
+    scale: 0.92;
+}
+
+/* Shop Styling */
+.shop-title {
+    font-size: 48px; /* Larger for mobile */
+    -unity-font-style: bold;
+    color: var(--color-text);
+    margin-bottom: 20px;
+    -unity-text-align: middle-center;
+    border-bottom-width: 4px;
+    border-bottom-color: var(--color-text);
+    padding-bottom: 10px;
+}
+
+.upgrade-list {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Upgrade Card Design */
+.upgrade-item {
+    background-color: #efebe9;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border-width: 4px;
+    border-color: var(--color-text);
+    flex-direction: row;
+    overflow: hidden;
+    height: 120px; /* Taller for easier tapping */
+    transition-duration: 0.1s;
+}
+
+.upgrade-item:active {
+    scale: 0.98;
+}
+
+.upgrade-info {
+    flex-grow: 1;
+    padding: 15px 25px;
+    justify-content: center;
+}
+
+.upgrade-name {
+    font-size: 28px; /* Larger for readability */
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+.upgrade-cost {
+    font-size: 22px;
+    color: #5d4037;
+    -unity-font-style: bold;
+    margin-top: 4px;
+}
+
+.upgrade-level-container {
+    width: 100px;
+    background-color: var(--color-text);
+    align-items: center;
+    justify-content: center;
+}
+
+.upgrade-level {
+    font-size: 36px;
+    color: #ffffff;
+    -unity-font-style: bold;
+}
+
+/* Ad Banner Area */
+.ad-container {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    border-top-width: 4px;
+    border-top-color: var(--color-text);
+}
+
+.ad-placeholder-text {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    -unity-font-style: italic;
+}
+
+/* Popup Styles */
+.popup-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background-color: var(--color-bg);
+    padding: 60px;
+    border-radius: 30px;
+    border-width: 8px;
+    border-color: var(--color-text);
+    align-items: center;
+    width: 80%;
+}
+
+.popup-title {
+    font-size: 48px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    margin-bottom: 30px;
+}
+
+.popup-body {
+    font-size: 32px;
+    color: var(--color-text);
+    margin-bottom: 40px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.popup-button {
+    background-color: var(--color-button);
+    color: white;
+    padding: 20px 60px;
+    font-size: 32px;
+    border-radius: 15px;
+    -unity-font-style: bold;
+    border-width: 4px;
+    border-color: var(--color-outline);
+}
+
+/* Click Particle Effects */
+.click-particle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url("project://database/Assets/Sprites/ekmek.png");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.floating-text {
+    position: absolute;
+    font-size: 50px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    -unity-text-outline-width: 2px;
+    -unity-text-outline-color: #2d1b18;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}

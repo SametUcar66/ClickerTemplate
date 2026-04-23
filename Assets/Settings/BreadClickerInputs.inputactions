@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "name": "BreadClickerInputs",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "644dcdc4-4e83-4238-8fe0-66a5eaeedf0c",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "419f4bb5-7d08-435f-b52b-ab201bed8b30",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5aa9d087-8a38-4bcb-bb36-662223c84e93",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "701a8a88-037a-4967-bfe0-bca2ef164ed2",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

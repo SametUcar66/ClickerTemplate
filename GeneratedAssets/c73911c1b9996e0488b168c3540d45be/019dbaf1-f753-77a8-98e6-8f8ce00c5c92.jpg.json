@@ -1,0 +1,27 @@
+{
+    "asset": "c73911c1b9996e0488b168c3540d45be",
+    "fileName": "019dbaf1-f753-77a8-98e6-8f8ce00c5c92.jpg",
+    "prompt": "A delicious, golden-brown loaf of bread, sourdough style, crusty texture, isolated on a white background, game asset style, high quality, 2D sprite.",
+    "negativePrompt": "",
+    "model": "f722aea3-8760-4eb1-a516-e2fce6476303",
+    "modelName": "Seedream 4",
+    "customSeed": -1,
+    "w3CTraceId": "27dd4295607349add9ee99379ac3203c",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 1024,
+        "height": 1024
+    },
+    "spriteSheet": false,
+    "duration": 0.0
+}
